@@ -57,6 +57,10 @@
             </q-list>
           </q-btn-dropdown>
         </div>
+        <div class="toolbar-spacer"></div>
+        <div class="toolbar-right">
+          <router-link to="/about" class="nav-link">About</router-link>
+        </div>
       </q-toolbar>
     </q-header>
 
@@ -68,6 +72,7 @@
 
 <script>
 export default {
+  name: 'App',
   setup() {},
 };
 </script>
@@ -80,14 +85,39 @@ export default {
   color: var(--light-beige);
   text-decoration: none;
   display: flex;
-  justify-content: flex-start; 
+  justify-content: space-between;
   align-items: center;
 }
 
 .toolbar-left {
   display: flex;
-  justify-content: flex-start; 
-  width: 100%;
+  align-items: center;
+}
+
+.toolbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.toolbar-spacer {
+  flex: 1;
+}
+
+.nav-link {
+  margin: 0 20px;
+  color: var(--light-beige);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.nav-link:hover {
+  color: var(--beige);
+  transform: scale(1.1);
+}
+
+.nav-link:active {
+  transform: scale(0.9);
 }
 
 .custom-dropdown {

@@ -55,7 +55,7 @@ const getWeather = async () => {
   border: 1px solid var(--medium-red);
   border-radius: 10px;
   max-width: 700px;
-  margin: 100px auto 50px auto; /* Adjusted for more space at the top */
+  margin: 100px auto 50px auto; 
   text-align: center;
   background-color: var(--light-beige);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -98,7 +98,7 @@ const getWeather = async () => {
 }
 
 .weather-info {
-  margin-top: 40px; /* Adjusted for more space */
+  margin-top: 40px; 
   display: flex;
   justify-content: center; 
   align-items: center;
@@ -106,7 +106,7 @@ const getWeather = async () => {
 }
 
 .weather-item {
-  margin: 20px; /* Adjusted for more space */
+  margin: 20px; 
   border: 1px solid var(--medium-red);
   border-radius: 5px;
   padding: 20px;
@@ -114,7 +114,7 @@ const getWeather = async () => {
   text-align: center;
   width: 220px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  animation: backgroundColorChange 3s ease infinite; /* Added background animation */
+  animation: backgroundColorChange 3s ease infinite; 
 }
 
 .weather-item img {
@@ -126,7 +126,7 @@ const getWeather = async () => {
 .weather-item p {
   margin: 0;
   color: var(--dark-red);
-  font-weight: bold; /* Made text bold */
+  font-weight: bold; 
 }
 
 .weather-border {
